@@ -6,7 +6,9 @@ from django.conf import settings
 
 urlpatterns = [
     path('', views.index, name='homePage'),
-    path('search/', views.search, name='searchPage')
+    path('search/', views.search, name='searchPage'),
+    path('location/<location>/', views.location, name='locationPage'),
+    
 ]
 if settings.DEBUG:
     urlpatterns+= static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

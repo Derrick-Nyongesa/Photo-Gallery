@@ -21,3 +21,9 @@ def search(request):
         message = "You haven't searched for any image category"
 
         return render(request, 'search.html', {"message": message})
+
+
+def location(request, location):
+    images = Image.filter_by_location(location)
+    print(images)
+    return render(request, 'location.html', {'location_images': images})

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+    {% if location_images %}
+        {% for image in location_images %}
+            <img src="{{image.image.url}}" alt="{{image.name}}" class="card-img">
+        {% endfor %}
+    {% endif %}
+{% endblock %}

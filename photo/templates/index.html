@@ -3,6 +3,10 @@
 {% block content %}
     {{block.super}}
     <h1>Welcome to Photo-Gallery</h1>
+    {% for location in locations %}
+    <a class="btn btn-outline-info btn-sm" id="btn"
+       href="/location/{{location.name}}">{{location.name}}</a>
+    {%endfor%}
     {% for image in images %}
         <h3>{{image.name}}</h3>
         <img src="{{image.image.url}}" alt="{{image.name}}">

@@ -4,6 +4,9 @@
 
 {% if images %}
 <h2 class="text-center">Found {{ images|length }} images in '{{message}}' category</h2>
+<a class="d-block mx-auto" href="/">
+    <button class="btn btn-sm btn-info d-block mx-auto">Back Home</button>
+</a>
 {% else %}
 <h2 class="text-center"> Found 0 images for your search {{message}}.</h2>
 
