@@ -3,7 +3,7 @@
 {% block content %} 
     {% if location_images %}
         {% for image in location_images %}
-            <img src="{{image.image.url}}" alt="{{image.name}}" class="card-img">
+            <img src="{{image.image.url}}" alt="{{image.name}}" >
         {% endfor %}
     {% endif %}
 {% endblock %}
