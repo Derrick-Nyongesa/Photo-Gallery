@@ -9,7 +9,7 @@
     {%endfor%}
     {% for image in images %}
         <h3>{{image.name}}</h3>
-        <img src="{{image.image.url}}" alt="{{image.name}}">
+        <img src="{{image.image.url}}" alt="{{image.name}}" onclick='copyToClipboard("{{ request.get_host }}{{image.image.url}}")'>
     {% endfor %}
 {% endblock %}
 
