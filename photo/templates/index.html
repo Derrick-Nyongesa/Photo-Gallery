@@ -5,10 +5,9 @@
     {{block.super}}
     <div class="container">
         <h1 class="text-center">Welcome to Photo-Gallery</h1>
-        <h2 class="text-center">Gallery</h2>
 
-        <div class="row">
-            <div class="col-md-7">View photos based on location they were taken</div>
+        <div class="row locations">
+            <div class="col-md-7 location-text">You can view photos based on location they were taken</div>
             <div class="col-md-5 text-center">
                 {% for location in locations %}
                     <a class="btn btn-primary"
@@ -17,7 +16,7 @@
             </div>
         </div>
 
-        <h2 class="text-center">All Photos</h2>
+        <h2 class="text-center h">All Photos</h2>
 
         <div class="row">
             
