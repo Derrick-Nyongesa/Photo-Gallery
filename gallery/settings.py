@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -40,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'photo',
     'bootstrap3',
+    'cloudinary'
 ]
 
 MIDDLEWARE = [
@@ -135,3 +139,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+cloudinary.config( 
+  cloud_name = "dniwvthcs", 
+  api_key = "733489727592124", 
+  api_secret = "eru0BCGQ1vqn1EYCANGvihC386k" 
+)
