@@ -11,7 +11,7 @@
                 {% for image in location_images %}
                     <div class="col-md-4">
                         <div class="" data-toggle="modal" data-target="#{{image.id}}">
-                            {% cloudinary image.image format="jpg" width=140 height=100 crop="" %}
+                            {% cloudinary image.image format="jpg" width=300 height=200 crop="" %}
                         </div>
                         <div class="modal fade " id="{{image.id}}" tabindex="-1" role="dialog"
                  aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -24,7 +24,7 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            {% cloudinary image.image format="jpg" width=140 height=100 crop="" %}
+                            {% cloudinary image.image format="jpg" width=500 height=400 crop="" %}
                             <p class="imgdesc text-center">{{image.description}}</p>
                             <span class="btn btn-sm btn-outline-success">{{image.category}}</span> <a
                                 href="/location/{{image.location}}" class="btn btn-sm btn-outline-info">{{image.location}}</a>
