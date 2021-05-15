@@ -38,10 +38,6 @@ git clone https://github.com/Derrick-Nyongesa/Photo-Gallery.git
 5. Open the application on your browser `http://127.0.0.1:8000/`
 
 
-## Link to live site on GitHub Pages
-
-
-
 ## Entity relationship diagram 
 ![ERD](https://user-images.githubusercontent.com/78686755/118359284-6f75ba00-b58b-11eb-8f1c-7e6e4979236c.png)
 
