@@ -21,7 +21,7 @@
         <div class="row">
             
             {% for image in images %}
-            <div class="col-md-4">
+            <div class="col-sm-6 col-md-4">
                 <div class="" data-toggle="modal" data-target="#{{image.id}}">
                     
                     {% cloudinary image.image format="jpg" width=300 height=200 crop="" %}
@@ -45,7 +45,7 @@
                         <div class="modal-footer">
                             <input class="form-control input-lg" type="text"
                                    value="{{image.image.url}}" id="{{image.id}}.url">
-                            <button class="btn btn-success btn-sm" onclick='copyToClipboard("{{ request.get_host }}{{image.image.url}}")'>Copy</button>
+                            <button class="btn btn-success btn-sm" onclick='copyToClipboard("{{image.id}}.url")'>Copy</button>
                             <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Close
                             </button>
                         </div>

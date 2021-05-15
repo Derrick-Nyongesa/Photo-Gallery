@@ -15,6 +15,7 @@ import os
 import cloudinary
 import cloudinary.uploader
 import cloudinary.api
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -142,7 +143,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 cloudinary.config( 
-  cloud_name = "dniwvthcs", 
-  api_key = "733489727592124", 
-  api_secret = "eru0BCGQ1vqn1EYCANGvihC386k" 
+  cloud_name = config("CLOUDINARY_NAME"), 
+  api_key = config("CLOUDINARY_KEY"), 
+  api_secret = config("CLOUDINARY_SECRET") 
 )

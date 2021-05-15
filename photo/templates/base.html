@@ -22,13 +22,10 @@
     {% endblock %}
 
     <script>
-        function copyToClipboard(str) {
-            const el = document.createElement('textarea');
-            el.value = str;
-            document.body.appendChild(el);
+        function copyToClipboard(id) {
+            const el = document.getElementById(id);
             el.select();
             document.execCommand('copy');
-            document.body.removeChild(el);
         }
     </script>
 
