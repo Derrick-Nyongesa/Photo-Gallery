@@ -7,8 +7,16 @@ This is a Django project was generated with [Python](https://www.python.org/) ve
 Derrick Nyongesa
 
 
-# Description
-This  is a Django Web gallery Application that displays differeht categories of photos from various locations.
+## Description
+This  is a Django Web gallery Application that displays different categories of photos from various locations.
+
+## User Story  
+  
+* View different photos that interest them  
+* Click a single image to expand it and view the details of that photo  
+* Search for different categories   
+* Copy a link to the photo to share with my friends.  
+* View photos based on the location they were taken.
 
 
 ## Project setup instructions
@@ -48,6 +56,9 @@ git clone https://github.com/Derrick-Nyongesa/Photo-Gallery.git
 * [Django3.2.2](https://docs.djangoproject.com/en/3.2/releases/3.2.2/)
 * [Heroku](https://heroku.com)
 
+
+##  Live Link  
+ Click [View Site](https://derrick-photo-gallery.herokuapp.com/)  to visit the site
 
 ## Contact Information 
 Any query? Contact me at [nyongesaderrick@gmail.com]
